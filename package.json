@@ -1,0 +1,26 @@
+{
+  "name": "simple-rest-api",
+  "version": "1.0.0",
+  "description": "A simple REST API with Node MonngoDB Fastify and Swagger",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnash29/simple-rest-api.git"
+  },
+  "author": "Matthew Nash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnash29/simple-rest-api/issues"
+  },
+  "homepage": "https://github.com/mnash29/simple-rest-api#readme",
+  "dependencies": {
+    "@hapi/boom": "^7.4.2",
+    "fastify": "^2.6.0",
+    "fastify-swagger": "^2.4.0",
+    "mongoose": "^5.6.2",
+    "nodemon": "^1.19.1"
+  }
+}
