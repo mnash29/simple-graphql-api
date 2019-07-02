@@ -31,9 +31,9 @@ git clone https://github.com/mnash29/simple-rest-api.git
 
 cd simple-rest-api
 
-// Install dependencies
+# Install dependencies
 npm install
 
-// start server
+# start server
 nodemon
 ```
