@@ -1,6 +1,6 @@
 const routes = require('./routes');
 const swagger = require('./config/swagger');
-const fastify = require('./server');
+const fastify = require('./server.js');
 
 // Register swagger
 fastify.register(require('fastify-swagger'), swagger.options);
