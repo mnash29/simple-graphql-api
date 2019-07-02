@@ -1,9 +1,23 @@
+// External dependences
+const gql = require('fastify-gql');
+const fastiSwag = require('fastify-swagger');
+
+// Internal dependencies
 const routes = require('./routes');
 const swagger = require('./config/swagger');
-const fastify = require('./server.js');
+const fastify = require('./server');
+
+// GraphQL Schema
+const schema = require('./schema');
 
 // Register swagger
-fastify.register(require('fastify-swagger'), swagger.options);
+fastify.register(fastiSwag, swagger.options);
+
+// Register fastify graphql 
+fastify.register(gql, {
+	schema,
+	graphiql: true
+});
 
 // Initialize routes
 routes.forEach((route, index) => {
