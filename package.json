@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/mnash29/simple-rest-api#readme",
   "dependencies": {
-    "@hapi/boom": "^7.4.2",
+    "@hapi/boom": "^7.4.11",
     "concurrently": "^4.1.1",
     "fastify": "^2.6.0",
     "fastify-gql": "^1.3.0",
